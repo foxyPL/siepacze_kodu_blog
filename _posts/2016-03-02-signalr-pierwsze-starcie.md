@@ -13,6 +13,12 @@ tags:
 excerpt: "SignalR jest darmowym frameworkiem dla platformy ASP.NET ułatwiającą implementacje aplikacji czasu rzeczywistego. Pozwala na utworzenie dwukierunkowej komunikacji między serwerem a klientem (przegladarka) bez konieczności przeładowania całej strony. SignalR umożliwia tworzenie apliacji www które w założeniu wymagają ciągłej aktualizacji danych pochodzących z serwera. Przykładem takich aplikacji mogą być gry czasu rzeczywistego lub komunikatory internetowe.
 
 SignalR dostarcza gotowe API umożliwający utworzenie między serwerem a klientem zdalnych wywołań procedur (RPC)."
+header:
+  overlay_image: /assets/images/alive.gif
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  cta_label: "More Info"
+  cta_url: "https://unsplash.com"
 ---
 
 SignalR jest darmowym frameworkiem dla platformy ASP.NET ułatwiającą implementacje aplikacji czasu rzeczywistego. Pozwala na utworzenie dwukierunkowej komunikacji między serwerem a klientem (przegladarka) bez konieczności przeładowania całej strony. SignalR umożliwia tworzenie apliacji www które w założeniu wymagają ciągłej aktualizacji danych pochodzących z serwera. Przykładem takich aplikacji mogą być gry czasu rzeczywistego lub komunikatory internetowe.
@@ -34,9 +40,8 @@ API SignalR dostarcza abstrakcyjną warstwe transportu. Oznacza to że programis
 
 Klasa <a href="https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(Microsoft.AspNet.SignalR.Hub);k(TargetFrameworkMoniker-.NETFramework,Version%3Dv4.5.1);k(DevLang-csharp)&rd=true" target="_blank">Hub</a> umożliwia komunikacje obustronną poprzez wywoływanie metod C# oraz JavaScript. Hub służy jako miejsce przechowywania metod wykonywanych przez serwer oraz aplikacje kliencką (np. przeglądarka internetowa). Dla każdego nowego połączenie tworzona jest nowa instancja Hub-a.
 
-&nbsp;
-
-<a href="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png" rel="attachment wp-att-41"><img class="aligncenter size-full wp-image-41" src="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png" alt="SignalR" width="833" height="350" srcset="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png 833w, http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR-300x126.png 300w, http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR-768x323.png 768w" sizes="(max-width: 833px) 100vw, 833px" /></a>
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/SignalR-768x323.png)
+{: .full}
 
 Poniżej przedstawiona jest pochodna klasy Hub.
 ```csharp
