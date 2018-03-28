@@ -2,13 +2,13 @@
   name: "Łukasz Zaborski"
   uri: "http://thewhip.com"
   email: "billy@rick.com"
-  bio: "What do you want, jewels? I am a very extravagant man."
+  bio: "Debug your mind before you debug code."
   avatar: "/assets/images/bio-photo.jpg"
-  twitter: "extravagantman"
+
 
 Jarek:
   name: "Jarek Liszewski"
   email: "cornelius@thewhip.com"
-  bio: "I ordered what?"
-  avatar: "/assets/images/bio-photo.jpg"
-  twitter: "rhymeswithsackit"
+  uri: "http://thewhip.com"
+  bio: "Programming is the art of telling another human being what one wants the computer to do."
+  avatar: "/assets/images/foxy-bio.jpg"
