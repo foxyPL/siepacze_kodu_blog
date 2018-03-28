@@ -24,6 +24,7 @@ url: https://foxyPL.github.io
 twitter_username: mmistakes
 github_username: foxyPL
 minimal_mistakes_skin: dirt
+locale: "en-EN"
 
 # Build settings
 markdown: kramdown

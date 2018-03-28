@@ -1,24 +1,26 @@
 ---
 title: "Welcome to Jekyll!"
 date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+categories: siepacze kodu
+author: Jarek
+excerpt: "Siepacze łączcie się. Nowy blog wystartował. Wkrtce pojawią się nowe wpisy. Na chwilę obecną przenosimy wpisy z poprzedniego bloga."
+header:
+  overlay_color: "#333"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Czas na własny blog?
 
-Jekyll also offers powerful support for code snippets:
+Dobre pytanie… Czytając rożne blogi, często trafialiśmy na wpisy, w których autorzy zachęcali każdego programistę do prowadzenia bloga. Do kilku dłuższuch wymianach zdań postanowiliśmy, że i my sprobjemy. Jakie będą efekty… To się dopiero okaże 🙂
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/alive.gif)
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Kto stoi za siepaczami kodu?
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Tematyka bloga będzie kręciła się głównie wokół programowania w C# i platformy .NET, oraz wszelkich bibliotek związanych z tym językiem, na jakie się już natknąłem i na jakie się kiedyś natknę. Chcę zacząć od pisania o rzeczach prostych, stopniowo przechodząc w coraz większy „stopień wtajemniczenia”. Blog ma pomóc w rozpoczęciu nauki programowania osobom zupełnie nie związanych z tą dziedziną. Dlatego, też przewiduję, że pierwszy post związany z programowaniem, będzie czymś na wzór instrukcji napisania programu „Hello world!”. Idąc tym śladem, za jakiś czas żeby dalej tutaj pisać, sam będę musiał się sporo douczać – z czego będę niezmiernie zadowolony 😉
+
+Bo programować każdy może…
+Dokładnie tak! Wystarczy tylko chcieć i mieć w sobie choć trochę samozaparcia (którego trochę mi brakuje :P).
+
+Tyle słowa wstępu.
+
+Zapraszamy wszystkich do śledzenia bloga!
