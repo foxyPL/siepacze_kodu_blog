@@ -48,7 +48,7 @@ plugins:
 author:
   name   : "Myrmidons Of The Code"
   avatar : "/assets/images/myr1.jpg"
-  bio    : "Myrmidons Of The code. A legendary developers of Greek mythology. According to Greek legend, they were created by Zeus from a colony of ants. According to them Programming is thinking, not typing. Most of programming is spent sleeping, walking around, staring out the window or doing anything else that helps you relax and think."
+  bio    : "Myrmidons Of The code. A legendary developers of Greek mythology. According to Greek legend, they were created by Zeus from a colony of ants."
   email  : # optional
   uri    : "https://siepaczekodu.pl"
 
