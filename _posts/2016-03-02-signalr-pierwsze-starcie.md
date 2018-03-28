@@ -2,15 +2,19 @@
 id: 37
 title: 'SignalR &#8211; pierwsze starcie'
 date: 2016-03-02T22:41:36+00:00
-author: Łukasz Zaborski
-layout: post
-guid: http://www.siepaczekodu.pl/?p=37
-permalink: /2016/03/02/signalr-pierwsze-starcie/
+author: Żaba
 image: /wp-content/uploads/2016/03/SignalR-Nuget2-e1458759694461.png
 categories:
   - 'C#'
   - SignalR
+tags:
+  - 'C#'
+  - SignalR
+excerpt: "SignalR jest darmowym frameworkiem dla platformy ASP.NET ułatwiającą implementacje aplikacji czasu rzeczywistego. Pozwala na utworzenie dwukierunkowej komunikacji między serwerem a klientem (przegladarka) bez konieczności przeładowania całej strony. SignalR umożliwia tworzenie apliacji www które w założeniu wymagają ciągłej aktualizacji danych pochodzących z serwera. Przykładem takich aplikacji mogą być gry czasu rzeczywistego lub komunikatory internetowe.
+
+SignalR dostarcza gotowe API umożliwający utworzenie między serwerem a klientem zdalnych wywołań procedur (RPC)."
 ---
+
 SignalR jest darmowym frameworkiem dla platformy ASP.NET ułatwiającą implementacje aplikacji czasu rzeczywistego. Pozwala na utworzenie dwukierunkowej komunikacji między serwerem a klientem (przegladarka) bez konieczności przeładowania całej strony. SignalR umożliwia tworzenie apliacji www które w założeniu wymagają ciągłej aktualizacji danych pochodzących z serwera. Przykładem takich aplikacji mogą być gry czasu rzeczywistego lub komunikatory internetowe.
 
 SignalR dostarcza gotowe API umożliwający utworzenie między serwerem a klientem zdalnych wywołań procedur (RPC).
