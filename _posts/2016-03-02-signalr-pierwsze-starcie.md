@@ -39,7 +39,7 @@ Klasa <a href="https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=E
 <a href="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png" rel="attachment wp-att-41"><img class="aligncenter size-full wp-image-41" src="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png" alt="SignalR" width="833" height="350" srcset="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png 833w, http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR-300x126.png 300w, http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR-768x323.png 768w" sizes="(max-width: 833px) 100vw, 833px" /></a>
 
 Poniżej przedstawiona jest pochodna klasy Hub.
-```
+```csharp
 using Microsoft.AspNet.SignalR;
 
 public class NotyficationHub : Hub
@@ -53,7 +53,7 @@ public class NotyficationHub : Hub
 
 Każda metoda publiczna w klasie może być wywołana z poziomu klienta. W tym przypadku metoda Send korzysta z właściwości <a href="https://msdn.microsoft.com/en-us/library/microsoft.aspnet.signalr.hub.clients(v=vs.118).aspx" target="_blank">Clients</a>, która przechowuje połączenia klientów z SignalR. Jeśli nasza klasa dziedziczy po klasie Hub, typ właściwości All to dynamic.
 
-```
+```javascript
 Clients.All.notyficationMessage(message);
 ```
 
@@ -61,9 +61,9 @@ Powyższa linia kodu wywołuje w każdym połączonym kliencie metode notyficati
 
 A teraz sposób wykorzystania Hub-a po stronie klienta
 
-```
+```javascript
 <script src="~/Scripts/jquery.signalR-2.1.2.js"></script>
-<cript src="~/signalr/hubs"</script>
+<cript src="~/signalr/hubs"></script>
 
 var notyficationHub = $.connection.notyficationHub;
 notyficationHub.client.notyficationMessage = function (message) {
@@ -77,7 +77,7 @@ Po pierwsze potrzebujemy referencji do biblioteki SignalR oraz do automatycznie 
 
 Następnie możemy wywołać poniższą linijke po stronie klienta w celu rozesłania wszystkim połączonym klientom wiadomości:
 
-```
+```javascript
 notyficationHub.server.send("Hellooo from the othjer sideeee...");
 ```
 
