@@ -39,8 +39,8 @@ Klasa <a href="https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=E
 <a href="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png" rel="attachment wp-att-41"><img class="aligncenter size-full wp-image-41" src="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png" alt="SignalR" width="833" height="350" srcset="http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR.png 833w, http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR-300x126.png 300w, http://www.siepaczekodu.pl/wp-content/uploads/2016/02/SignalR-768x323.png 768w" sizes="(max-width: 833px) 100vw, 833px" /></a>
 
 Poniżej przedstawiona jest pochodna klasy Hub.
-
-<pre class="EnlighterJSRAW" data-enlighter-language="csharp">using Microsoft.AspNet.SignalR;
+```
+using Microsoft.AspNet.SignalR;
 
 public class NotyficationHub : Hub
 {
@@ -48,33 +48,38 @@ public class NotyficationHub : Hub
     {
         Clients.All.notyficationMessage(message);
     }
-}</pre>
+}
+```
 
 Każda metoda publiczna w klasie może być wywołana z poziomu klienta. W tym przypadku metoda Send korzysta z właściwości <a href="https://msdn.microsoft.com/en-us/library/microsoft.aspnet.signalr.hub.clients(v=vs.118).aspx" target="_blank">Clients</a>, która przechowuje połączenia klientów z SignalR. Jeśli nasza klasa dziedziczy po klasie Hub, typ właściwości All to dynamic.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="csharp">Clients.All.notyficationMessage(message);</pre>
+```
+Clients.All.notyficationMessage(message);
+```
 
 Powyższa linia kodu wywołuje w każdym połączonym kliencie metode notyficationMessage zadeklarowaną w obiekcie proxy utworzonym przez $.connection
 
 A teraz sposób wykorzystania Hub-a po stronie klienta
 
-<pre class="EnlighterJSRAW" data-enlighter-language="js">&lt;script src="~/Scripts/jquery.signalR-2.1.2.js"&gt;&lt;/script&gt;
-&lt;script src="~/signalr/hubs"&gt;&lt;/script&gt;
+```
+<script src="~/Scripts/jquery.signalR-2.1.2.js"></script>
+<cript src="~/signalr/hubs"</script>
 
 var notyficationHub = $.connection.notyficationHub;
 notyficationHub.client.notyficationMessage = function (message) {
     console.log(message);
 }
 
-$.connection.hub.start();</pre>
+$.connection.hub.start();
+```
 
 Po pierwsze potrzebujemy referencji do biblioteki SignalR oraz do automatycznie wygenerowanych skryptów przez SignalR. Następnie za pomocą wczytanej biblioteki wyciagamy referencje do automatycznie wygenerowanego obiektu proxy komunikującego się z Hubem po stronie serwera. Należy wspomieć iż referencje do obiektów klas pochodnych po Hub-ie oraz metod znajdujących sie w nich zapisywane są w formacie camelCase. Mając już obiekt proxy możemy zaimplementować funkcje która będzie wywoływana przez metode Send klasy NotyficationHub opisaną powyżej. Ostatnia linijka inicjalizuje połączenie.
 
 Następnie możemy wywołać poniższą linijke po stronie klienta w celu rozesłania wszystkim połączonym klientom wiadomości:
 
-<pre class="EnlighterJSRAW" data-enlighter-language="js">notyficationHub.server.send("Hellooo from the othjer sideeee...");</pre>
-
-&nbsp;
+```
+notyficationHub.server.send("Hellooo from the othjer sideeee...");
+```
 
 #### Małe podsumowanie
 
@@ -84,25 +89,3 @@ Następnie możemy wywołać poniższą linijke po stronie klienta w celu rozes�
   * Framework jest wspierany oraz rozwijany na bieżąco. (Niestety nie jest jeszcze dostępny w nowym ASP.NET Core 1)
 
 W kolejnym wpisie dotyczącym SignalR postaram sie przedstawić nieco większy przykład zastosowania frameworka, który znajduje się w mojej pracy magisterskiej 🙂
-
-<div class='sfsi_Sicons' style='width: 100%; display: inline-block; vertical-align: middle; text-align:left'>
-  <div style='margin:0px 8px 0px 0px; line-height: 24px'>
-    <span>Udostępnij</span>
-  </div>
-  
-  <div class='sfsi_socialwpr'>
-    <div class='sf_fb' style='text-align:left;width:98px'>
-      <div class="fb-like" href="http://www.siepaczekodu.pl/2016/03/02/signalr-pierwsze-starcie/" width="180" send="false" showfaces="false"  action="like" data-share="true"data-layout="button" >
-      </div>
-    </div>
-    
-    <div class='sf_twiter' style='text-align:left;float:left;width:auto'>
-      <a href="http://twitter.com/share" data-count="none" class="sr-twitter-button twitter-share-button" lang="en" data-url="http://www.siepaczekodu.pl/2016/03/02/signalr-pierwsze-starcie/" data-text="SignalR &#8211; pierwsze starcie" ></a>
-    </div>
-    
-    <div class='sf_google' style='text-align:left;float:left;max-width:62px;min-width:35px;'>
-      <div class="g-plusone" data-href="http://www.siepaczekodu.pl/2016/03/02/signalr-pierwsze-starcie/" data-size="large" data-annotation="none" >
-      </div>
-    </div>
-  </div>
-</div>

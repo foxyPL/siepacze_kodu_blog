@@ -7,6 +7,7 @@ categories:
 tags:
   - Resharper
 ---
+
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/Img1.png)
 {: .full}
 
